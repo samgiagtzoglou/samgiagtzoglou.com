@@ -109,11 +109,18 @@ a:focus {
     background-color: rgba(255,255,255,.3);
     
 }
-.nav-icon {
-    opacity:0;
-    -webkit-transition: opacity .3s ease-in-out,padding .3s ease-in-out;
-        -moz-transition: opacity .3s ease-in-out,padding .3s ease-in-out;
-        transition: opacity .3s ease-in-out,padding .3s ease-in-out;
+@media(min-width:767px) {
+    .nav-icon {
+        opacity:0;
+        -webkit-transition: opacity .3s ease-in-out,padding .3s ease-in-out;
+            -moz-transition: opacity .3s ease-in-out,padding .3s ease-in-out;
+            transition: opacity .3s ease-in-out,padding .3s ease-in-out;
+    }
+}
+@media(max-width:767px) {
+    .navbar-custom .nav li a {
+    text-align:center;
+    }
 }
 .nav-icon-show {
     opacity: 1;
